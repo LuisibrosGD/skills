@@ -48,8 +48,8 @@ No ejecuta ni modifica el análisis salvo petición expresa.
 @notebook-a-guion  conviérteme laboratorio.ipynb en un guion de 12 minutos
 ```
 
-Requiere Python 3.10+ (el helper usa solo la biblioteca estándar). En macOS/Linux usa
-`python3` en lugar de `python`.
+Requiere Python 3.10+ (el helper usa solo la biblioteca estándar). En macOS y Linux usa
+`python3`; en Windows, `python`.
 
 ## Estructura
 

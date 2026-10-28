@@ -20,7 +20,9 @@ Convierte el notebook proporcionado en un guion que siga sus bloques y muestre q
 1. Inspecciona código, encabezados y salidas guardadas. No ejecutes celdas ni instales paquetes por defecto. Un execution_count nulo no invalida una salida guardada.
 2. Extrae material con el helper, cuya ruta es relativa a esta skill:
 
-       python scripts/notebook_material.py extract <notebook.ipynb> --assets-dir <carpeta/guion_assets> --manifest <ruta-temporal/evidencia.json>
+       python3 scripts/notebook_material.py extract <notebook.ipynb> --assets-dir <carpeta/guion_assets> --manifest <ruta-temporal/evidencia.json>
+
+   Usa `python3` en macOS y Linux; en Windows, `python`. Requiere Python 3.10 o superior y ninguna dependencia externa.
 
    El manifiesto incluye código, encabezados, consola, tablas e imágenes extraídas. Consulta las partes relevantes y elimina los temporales de la tarea antes de entregar.
 3. Conserva las figuras completas: no recortes, recolorees ni regeneres sus imágenes. Inspecciónalas cuando la interpretación dependa de su forma. Si una misma salida ofrece varias representaciones de imagen, elige una original (preferentemente PNG), sin duplicar la figura por sus formatos. Los nombres con huella de contenido evitan sustituir imágenes de guiones anteriores.
@@ -47,7 +49,7 @@ Si se pide conservar los div orales, captura cada bloque completo antes de edita
 
 Ejecuta:
 
-    python scripts/notebook_material.py validate <guion.md> --notebook <notebook.ipynb>
+    python3 scripts/notebook_material.py validate <guion.md> --notebook <notebook.ipynb>
 
 Para texto protegido añade --preserve-from <guion-anterior.md>. Si el usuario pidió otro estilo, añade --allow-custom-style y verifica sus valores manualmente.
 
